@@ -48,6 +48,6 @@ task generateMatrix {
     >>>
 
     output {
-        File matrix = "matrix.txt"
+        File fin = "matrix.txt"
     }
 }

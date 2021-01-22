@@ -3,7 +3,7 @@
     "description": "fingerprintCompare workflow test",
     "metrics_calculate": "calculate.sh",
     "metrics_compare": "compare.sh",
-    "output_metrics_dir": "/.mounts/labs/gsi/testdata/fingerprintCompare/output_expectation/",
+    "output_metrics_dir": "/.mounts/labs/gsi/testdata/fingerprintCompare/output_expectations/",
     "parameters": {
       "wdl_options": {
         "write_to_cache": false,
@@ -16,23 +16,7 @@
       "id": "testCase1",
       "parameters": {
         "wdl_inputs": {
-          "myWorkflow.param": "1",
-          "myWorkflow.lanes": [
-            1,
-            2
-          ]
-        }
-      }
-    },
-    {
-      "id": "testCase2",
-      "parameters": {
-        "wdl_inputs": {
-          "myWorkflow.param": "2",
-          "myWorkflow.lanes": [
-            1,
-            2
-          ]
+            "fingerprintCompare.finFile": "/.mounts/labs/gsi/testdata/fingerprintCompare/finlist.txt"
         }
       }
     }
